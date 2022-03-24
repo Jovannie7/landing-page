@@ -1,3 +1,378 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2cc67faf63dbefa33ead62a3b0b7f01803a57541a8792e5fb78b86d0ca2174aa
-size 6373
+
+/* yuri on ice  */
+@font-face {
+  font-family: "yukari";
+  src:url("./assets/fonts/yukarimobil-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* greatlakes */
+@font-face {
+  font-family: "greatlakes";
+  src: url("/assets/fonts/GREALN__-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html, body{
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+}
+
+                      /* HEADER */
+header{
+  background: none;
+  background-color: black; 
+  color: black;
+  padding: 5px 0;
+  width: 100%;
+}
+
+/* HEADER NAV */
+header nav{
+  align-items: center;
+  color: white;
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+/* LOGO CONTAINER*/
+.logo-container{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+}
+
+/* logo link format  */
+.logo-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LOGO TEXT */
+.logo-link a{
+  border: white;
+  border-radius: 0 0 20px 0;
+  color: white;
+  /* font-size: 20px; */
+  font-size: 24px;
+  font-weight: 900;
+  font-family: monospace;
+  text-decoration: none;
+  font-family: "greatlakes";
+  letter-spacing: 3px;
+  padding: 0;
+}
+
+  /* LOGO STAR PROPERTIES*/
+.logo img{
+  width: 50px;
+  margin-top: 5px;
+  padding-right: 2.5px
+}
+
+/* NAV UL STYLING */
+  nav ul{
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+/* NAV LI STYLING */
+  nav li{
+  padding: 10px 0;
+}
+
+/* NAV UL A STYLING */
+  nav ul a{
+  border:solid white;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+/* NAV LI A STYLING WHEN HOVERING */
+  nav li a:hover{
+  color: red;
+}
+
+/* introduction container and its children */
+.introduction-container{
+  color: white;
+  display: flex;
+  justify-content: center;
+  /* height of the container */
+  min-height: 60vh;
+  /* position: relative; */
+  /* helps remove extra width */
+  /* overflow: hidden; */
+  background-image: url("/images/hero-bg.jpg");
+}
+
+/* bg */
+.introduction-container{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+/* VIDEO BACKGROUND PROPERTIES */
+/* .video-bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+} */
+
+/* introduction container*/
+.introduction-content{
+  align-items: center;
+  background: rgb(20, 20, 20, 0.5);
+  border-radius: 10px 0 8px 0;
+  display: flex;
+  /* font properties */
+  font-weight: bold;
+  font-size: 15px;
+  gap: 40px;
+  justify-content: center;
+  /* background: rgb(119, 28, 28, 0.8); */
+  margin: 5%;
+  padding: 5%;
+  overflow: visible;
+}
+
+/* text for introduction content*/
+.intro-text-block{
+  padding: 2.5%;
+  max-width: 400px;
+  width: 100%;
+
+}
+.intro-text-block p{
+  background: black;
+  padding: 10px;
+}
+
+
+/* INTRODUCTION CONTAINER H1  */
+.introduction-container h1{
+  background: black;
+  color: white;
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 5px;
+  text-shadow: 10px;
+}
+
+
+/* INTRO IMAGE  */
+.intro-image img{
+  max-width: 650px;
+  height: auto;
+  width: 100%;
+}
+
+/* INTRO IMAGE RESPONSIVE */
+@media only screen and (max-width: 1600px) {
+  .intro-image img {
+    max-width: 600px;
+    height: auto;
+    /* max-height: 600px; */
+    overflow: visible
+  }
+}
+
+/* SIGN-UP BUTTON*/
+.sign-up{
+  background: white;
+  border-width: 5px;
+  border-color: black;
+  border-radius: 0 0 10px 0;
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 16px;
+  opacity: 1;
+  width: 80px;
+  padding: 10px 5px;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+/* BUTTON HOVER STYLING*/
+.sign-up:hover{
+  background: rgb(13, 13, 44);
+  /* color: rgb(168, 0, 0); */
+  color: white;
+}
+
+/* GALLERY CONTAINER  */
+.gallery-container{
+  align-items: center;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* height of gallery container */
+  min-height: 45vh;
+  padding: 30px 0 60px;
+  text-align: center;
+}
+
+/* title class of gallery container */
+.gallery-container h2{
+  font-size: 30px;
+  font-size: bold;
+  margin-top: 0;
+}
+
+/* album *\ 
+container for the photos */
+.album{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  /* margin: 30px; */
+  /* width: 80%; */
+}
+
+/* cards */
+.card{
+  color: white;
+  /* display flex helps size larger images */
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
+  padding: 10px;
+  margin: 5px;
+  /* makes the text uppercase but doesn't yell with the screen reader turned on */
+  text-transform: uppercase;
+  width: 100%;
+}
+
+/* properties for images for each card */
+.card img{
+  border: 2px solid red;
+  border-radius: 0 0 10px 0;
+  object-fit: center;
+  height: 100%;
+  width: 100%;
+  /* max-width: 200px; */
+  min-height: 200px;
+  margin-bottom: 10px;
+}
+
+.card img:hover{
+  cursor: pointer;
+}
+
+/* FIGCAPTION FOR CARDS */
+.card figcaption{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+/* QUOTE CONTAINER */
+.quote-wrap{
+  align-items: center;
+  background-image: url("/images/stare2.jpg");
+  color: white;
+  display: flex;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 25px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  /* height of container */
+  min-height: 40vh;
+  text-align: center;
+  padding: 30px;
+}
+
+/* quote-wrap container */
+.quote-wrap{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+/* CTA CONTAINER
+  -helps center the content centered
+  -gives it a background of a linear color 
+*/
+.cta-container{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 30vh;
+  /* background: rgb(168, 10, 10); */
+  background-image: linear-gradient(rgb(143, 16, 16), rgb(110, 17, 17)
+  );
+  padding: 0 10%;
+}
+
+/*CTA CONTENT PROPERTIES 
+  -helps organize the elements inside of the call to action box 
+  -assigns the height of the box 
+*/
+.cta-content{
+  align-items: center;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  min-height: 10vh;
+  padding: 30px 60px;
+}
+
+/* CTA CONTENT H2  */
+.cta-content h2{
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+/* FOOTER */
+footer{
+  align-items: center;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  min-height: 5vh;
+  padding: 10px;
+  padding: 20px;
+  text-align: center;
+}
